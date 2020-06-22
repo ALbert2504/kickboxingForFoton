@@ -1,0 +1,435 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/******* fonts ********/
+.bold {
+    font-family: 'Montserrat Bold';
+}
+.medium {
+    font-family: 'Montserrat Medium';
+}
+.black {
+    font-family: 'Montserrat Black';
+}
+/**********************/
+
+/*
+* section 1,, intro
+*/
+.intro {
+    height: 100vh;
+    background-image: url('../media/images/introBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.intro__content, .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro__content {
+    color: #fff;
+}
+.intro__subheading {
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.intro__heading {
+    text-transform: uppercase;
+    font-size: 84px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 10px 7px 3px rgb(172, 48, 48);
+}
+.intro__desc {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+/*
+* section 2,, trainers
+*/
+.trainers {
+    padding: 15px 0 60px;
+}
+.trainers__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.trainers__content :nth-child(n) {
+    transition: opacity 0.4s linear, width 0.4s linear;
+}
+.trainers__gloves {
+    width: 20%;
+}
+.trainers__gloves > img {
+    width: 100%;
+    display: block;
+}
+.trainers__titles {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.trainers__titles_heading {
+    color: rgb(165, 116, 42);
+    font-size: 30px;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+}
+.trainers__titles_subheading {
+    font-size: 38px;
+    color: rgb(173, 25, 25);
+    word-spacing: 4px;
+    letter-spacing: 3px;
+}
+.trainers__stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.star > img {
+    display: block;
+    width: 100%;
+}
+.small {
+    width: 2%;
+}
+.big {
+    width: 4%;
+    margin: 0 12px;
+}
+
+.trainers__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.trainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.trainer__photo {
+    position: relative;
+    width: 40%;
+    transition: opacity 0.4s linear;
+}
+.invisible {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+.trainer__border {
+    position: relative;
+    width: 100%;
+    display: block;
+    transform: rotate(-60deg);
+    z-index: 1;
+}
+.trainer__img {
+    border-radius: 60%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    top: 6px;
+    left: 12px;
+    width: 90%;
+}
+.trainer__img > img {
+    display: block;
+    width: 100%;
+}
+.trainer__info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.trainers__info_par2 {
+    margin: 10px 0;
+}
+.info__par_heading {
+    text-transform: uppercase;
+    color: rgb(173, 25, 25);
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+.trainers__separator {
+    position: relative;
+    width: 65%;
+    padding: 4px 0;
+    background-color: rgb(34, 34, 179);
+    margin: 50px 0;
+    /* transition: all 0.4s linear; */
+}
+.width0 {
+    width: 0;
+}
+.height0::before, .height0::after {
+    height: 0;
+}
+.trainers__separator::before {
+    content: "";
+    background-color: rgb(34, 34, 179);
+    padding: 0 4px;
+    height: 54px;
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    z-index: -1;
+    transition: height 0.4s linear;
+}
+.trainers__separator::after {
+    content: "";
+    background-color: rgb(34, 34, 179);
+    padding: 0 4px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    right: 13%;
+    z-index: -1;
+    transition: height 0.4s linear;
+}
+.height0::before, .height0::after {
+    height: 0;
+}
+.trainer2 .trainer__border {
+    transform: rotate(-90deg);
+}
+.info__par_content1 {
+    margin-top: 10px;
+}
+.info__par_content2 {
+    margin: 12px 0;
+}
+
+
+/*
+* section 3,, schedule
+*/
+.schedule {
+    position: relative;
+    padding: 70px 0;
+    background-image: url('../media/images/sceduleBg.png');
+    background-size: cover;
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.schedule::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 255, 0.411);
+    z-index: 1;
+}
+.schedule__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.418);
+    padding: 20px 70px;
+    margin: 0 auto;
+    transition: opacity 0.4s linear;
+}
+.schedule__content :nth-child(n) {
+    transition: opacity 0.4s linear;
+}
+.schedule__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.schedule__heading_star > img {
+    display: block;
+    width: 100%;
+}
+.smallStar {
+    width: 20px;
+}
+.bigStar {
+    width: 40px;
+}
+.shcedule__heading_text {
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.schedule__plans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+.schedule__planbox1,
+.schedule__planbox2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 45%;
+}
+.plan1::after,
+.plan3::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 80px;
+    padding: 4px 0;
+    background-color: #fff;
+}
+.schedule__plan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+.blue {
+    color: rgb(29, 29, 138);
+    letter-spacing: normal;
+}
+.plan__heading {
+    color: rgb(133, 39, 39);
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+.plan__description {
+    margin-top: 10px;
+}
+.plan2, .plan4 {
+    margin-top: 40px;
+}
+
+
+/*
+* section 4,, members
+*/
+.members {
+    padding: 75px 0;
+}
+.members__content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.member__photo {
+    transition: opacity 0.4s linear;
+}
+.members__photos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.member2__photo {
+    transform: rotate(160deg);
+}
+.members__separator {
+    position: relative;
+    width: 100%;
+    padding: 4px 0;
+    background-color: rgb(34, 34, 179);
+    margin-top: 20px;
+    transition: width 0.4s linear;
+}
+.members__separator::after {
+    content: "";
+    position: absolute;
+    height: 140px;
+    padding: 0 4px;
+    background-color: rgb(34, 34, 179);
+    left: calc(50% - 4px);
+    transition: height 0.4s linear;
+}
+.members__sep_width0 {
+    width: 0;
+}
+.members__sep_height0::after {
+    height: 0;
+}
+.members__nameprofs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+.member__nameprof {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.member__name {
+    color: rgb(133, 39, 39);
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.member__surname {
+    color: rgb(133, 39, 39);
+    text-transform: uppercase;
+    font-size: 48px;
+}
+.member__profession {
+    font-size: 20px;
+    color: rgb(34, 34, 179);
+    text-transform: uppercase;
+}
