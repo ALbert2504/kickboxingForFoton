@@ -8,11 +8,13 @@ window.addEventListener('scroll', e => {
     const $trainersSubheading = document.querySelector('.trainers__titles_subheading');
     const $trainersStars = document.querySelector('.trainers__stars');
     const $trainer1Photo = document.querySelector('.trainer1 .trainer__photo');
+    const $trainersSubHeading = document.querySelector('.trainers__titles_subheading');
     const $trainer1Info = document.querySelector('.trainer1 .trainer__info');
 
     let trainer1PhotoPosition = $trainer1Photo.getBoundingClientRect().top;
+    let traiersSbuheadingPostion = $trainersSubHeading.getBoundingClientRect().top;
 
-    if(trainer1PhotoPosition < screenPosition) {
+    if(traiersSbuheadingPostion < screenPosition) {
         setTimeout(() => {
             $trainersglovesImg.classList.add('visible');
             $trainersglovesImg.classList.remove('invisible');
@@ -126,3 +128,5 @@ window.addEventListener('scroll', e => {
         }, 1000);
     }
 });
+
+console.log(window.innerWidth);

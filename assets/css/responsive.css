@@ -1,0 +1,210 @@
+@media only screen and (max-width: 1241px) {
+    .trainers__separator::before,
+    .trainers__separator::after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .members__content {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1052px) {
+    .trainer1 {
+        flex-direction: column-reverse;
+        margin-top: 25px;
+    }
+    .trainer1 .trainer__photo {
+        margin-top: 25px;
+    }
+    .trainer__info {
+        align-items: center;
+    }
+    .trainers__info_par1,
+    .trainers__info_par2,
+    .trainers__info_par3 {
+        text-align: center;
+    }
+    .trainer2 {
+        flex-direction: column-reverse;
+    }
+    .trainer2 .trainer__photo {
+        margin-bottom: 25px;
+    }
+    .trainer__photo {
+        width: 50%;
+    }
+    .trainers__separator::before,
+    .trainers__separator::after {
+        display: block;
+    }
+    .trainers__separator::before {
+        left: 49%;
+    }
+    .trainers__separator::after {
+        right: unset;
+        left: 49%;
+    }
+
+    .trainers__info_par {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .members__content {
+        width: 75%;
+    }
+    .schedule__heading {
+        width: 80%;
+    }
+    .schedule__plans {
+        flex-direction: column;
+    }
+    .schedule__planbox1,
+    .schedule__planbox2 {
+        width: 80%;
+    }
+    .plan3 {
+        margin-top: 40px;
+    }
+    .plan2::after {
+        display: block;
+    }
+    .trainer__info {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    .members__content {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .trainer__photo {
+        width: 60%;
+    }
+    .intro__heading {
+        font-size: 64px;
+    }
+    .intro__subheading {
+        font-size: 26px;
+    }
+    .intro__desc {
+        font-size: 16px;
+    }
+
+    .member__surname {
+        font-size: 32px;
+    }
+    .member__name {
+        font-size: 20px;
+    }
+    .member__profession {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .trainer__photo {
+        width: 80%;
+    }
+    .trainer {
+        width: 90%;
+    }
+    .trainer__info {
+        width: 95%;
+    }
+
+    .schedule__content {
+        padding: 20px 35px;
+    }
+    .schedule__planbox1,
+    .schedule__planbox2 {
+        width: 95%;
+    }
+
+    .shcedule__heading_text {
+        font-size: 32px;
+    }
+    .bigStar {
+        width: 30px;
+    }
+    .smallStar {
+        width: 15px;
+    }
+    .plan__heading {
+        font-size: 21px;
+    }
+
+    .trainers__titles_subheading  {
+        font-size: 30px;
+    }
+    .trainers__titles_heading {
+        font-size: 24px;
+    }
+    
+    .schedule__heading  {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .intro__heading {
+        font-size: 48px;
+    }
+    .intro__subheading {
+        font-size: 22px;
+    }
+    .intro__desc {
+        font-size: 14px;
+    }
+
+    .member__name {
+        font-size: 17px;
+    }
+    .member__surname  {
+        font-size: 24px;
+    }
+    .member__profession {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .trainers__titles_subheading {
+        font-size: 22px;
+    }
+    .trainers__titles_heading  {
+        font-size: 18px;
+    }
+    .info__par_heading {
+        font-size: 17px;
+    }
+    .info__par_content,
+    .info__par_content1,
+    .info__par_content2,
+    .info__par_content3 {
+        font-size: 14px;
+    }
+    
+    .intro__heading {
+        font-size: 40px;
+    }
+    .intro__subheading {
+        font-size: 19px;
+    }
+    .plan__heading {
+        font-size: 16px;
+    }
+    .plan__description {
+        font-size: 13px;
+    }
+    .bigStar, .smallStar {
+        display: none;
+    }
+}

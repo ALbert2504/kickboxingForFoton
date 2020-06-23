@@ -106,12 +106,14 @@ a {
     font-size: 30px;
     word-spacing: 4px;
     letter-spacing: 3px;
+    text-align: center;
 }
 .trainers__titles_subheading {
     font-size: 38px;
     color: rgb(173, 25, 25);
     word-spacing: 4px;
     letter-spacing: 3px;
+    text-align: center;
 }
 .trainers__stars {
     display: flex;
@@ -147,7 +149,7 @@ a {
 
 .trainer__photo {
     position: relative;
-    width: 40%;
+    width: 43%;
     transition: opacity 0.4s linear;
 }
 .invisible {
@@ -214,7 +216,7 @@ a {
     height: 54px;
     position: absolute;
     bottom: 0;
-    left: 12%;
+    left: 14%;
     z-index: -1;
     transition: height 0.4s linear;
 }
@@ -225,7 +227,7 @@ a {
     height: 54px;
     position: absolute;
     top: 0;
-    right: 13%;
+    right: 15%;
     z-index: -1;
     transition: height 0.4s linear;
 }
@@ -320,7 +322,8 @@ a {
     width: 45%;
 }
 .plan1::after,
-.plan3::after {
+.plan3::after,
+.plan2::after {
     content: "";
     position: absolute;
     bottom: -20px;
@@ -328,6 +331,9 @@ a {
     width: 80px;
     padding: 4px 0;
     background-color: #fff;
+}
+.plan2::after {
+    display: none;
 }
 .schedule__plan {
     position: relative;
@@ -370,6 +376,11 @@ a {
 }
 .member__photo {
     transition: opacity 0.4s linear;
+    width: 45%;
+}
+.member__photo > img {
+    width: 100%;
+    display: block;
 }
 .members__photos {
     width: 100%;
@@ -432,4 +443,5 @@ a {
     font-size: 20px;
     color: rgb(34, 34, 179);
     text-transform: uppercase;
+    text-align: center;
 }
